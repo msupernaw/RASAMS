@@ -3,6 +3,12 @@
 
 class parameter{
 public:
+  parameter(){
+
+  }
+  parameter(double v){
+   this->value = v;
+  }
   double value;
   bool estimated;
 };
@@ -16,5 +22,4 @@ RCPP_EXPOSED_CLASS(parameter)
       .constructor<parameter>()
       .field("value", &parameter::value)
     }
-
 
