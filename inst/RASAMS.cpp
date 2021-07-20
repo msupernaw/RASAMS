@@ -20,6 +20,6 @@ RCPP_EXPOSED_CLASS(parameter)
       .constructor()
       .constructor<double>()
       .constructor<parameter>()
-      .field("value", &parameter::value)
-    }
+      .field("value", &parameter::value);
+}
 
